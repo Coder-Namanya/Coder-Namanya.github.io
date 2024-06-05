@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section with fixed navbar -->
+    <header>
+        <div class="navbar">
+            <!-- Logo -->
+            <div class="logo">Musiklabs</div>
+            <!-- Hamburger menu checkbox input (hidden) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <!-- Label for the hamburger menu (visible) -->
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <!-- Navigation menu -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#playlist">Playlist</a></li>
+                    <li><a href="#album">Albums</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main content area -->
+    <main>
+        <!-- Hero section with flexbox layout -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <!-- Left side of the hero section -->
+                <input type="checkbox" id="mode-toggle" />
+                <label for="mode-toggle" class="mode-label"></label> 
+                <div class="hero-text">
+                    <h2>Welcome to Musiklabs</h2>
+                    <p>Your ultimate music discovery platform.</p>
+                    <p>Unleash Your Soundtrack: Discover, Stream, and Share Your Favorite Tunes</p>
+                    <!-- Button linking to the featured section -->
+                    <a href="#playlist" class="hero-button">Explore Featured Playlists</a>
+                </div>
+                <!-- Right side of the hero section with an SVG image -->
+                <div class="hero-image">
+                    <!-- Sample SVG image with animation -->
+                    <svg width="398" height="408" viewBox="0 0 398 408" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="undraw_compose_music_re_wpiw 1" clip-path="url(#clip0_1_2)">
+                        <g id="Group 1">
+                        <path id="Ellipse 1" d="M388.5 211.5C388.5 318.089 301.646 404.5 194.5 404.5C87.3543 404.5 0.5 318.089 0.5 211.5C0.5 104.911 87.3543 18.5 194.5 18.5C301.646 18.5 388.5 104.911 388.5 211.5Z" stroke="white"/>
+                        <g id="logos">
+                        <g id="logos_2">
+                        <path id="Vector 1" d="M74.9014 376.953C-62.8852 341.233 34.3906 232.125 100.252 182.037C276.213 84.4925 292.368 20.0355 278.45 0C295.847 5.15198 310.511 39.155 229.986 133.951C149.461 228.748 307.777 310.264 397 339.172C347.045 366.649 212.688 412.674 74.9014 376.953Z" fill="url(#paint0_linear_1_2)" stroke="black"/>
+                        <g id="logos_3">
+                        <g id="Group">
+                        <path id="Vector" d="M395.817 299.392C394.829 297.727 390.556 299.51 389.77 297.999C388.988 296.493 392.958 294.198 395.226 288.956C395.635 288.011 398.212 282.053 396.304 280.215C392.687 276.731 376.137 291.109 370.345 286.404C369.073 285.372 368.185 283.31 364.338 279.963C362.808 278.632 361.882 278.031 360.987 278.254C359.716 278.572 359.615 280.273 358.252 283.617C356.209 288.632 355 288.329 353.809 292.331C352.925 295.301 353.127 297.028 352.087 297.365C350.615 297.841 349.26 294.69 347.395 294.972C345.491 295.26 344.34 298.929 343.977 301.676C343.295 306.83 345.188 310.231 346.237 313.808C347.377 317.694 348.054 323.605 345.421 331.972L319.36 405.399C325.113 390.332 341.772 349.03 348.772 333.681C350.793 329.251 353.024 324.756 357.606 322.983C362.016 321.275 368.074 322.295 375.797 320.434C376.699 320.217 379.202 319.58 379.517 318.108C379.777 316.891 378.305 316.212 378.531 315.072C378.835 313.543 381.73 313.524 385.287 311.76C387.796 310.516 389.359 309.037 390.703 307.764C391.108 307.381 397.131 301.609 395.817 299.392Z" fill="#F2F2F2"/>
+                        <path id="Vector_2" d="M293.286 338.047C292.183 338.051 291.826 340.663 290.857 340.612C289.892 340.562 289.911 337.951 287.993 335.326C287.647 334.852 285.467 331.868 284.014 332.274C281.261 333.044 283.542 345.316 279.562 346.801C278.688 347.127 277.42 346.968 274.667 347.891C273.572 348.258 273.01 348.539 272.862 349.043C272.651 349.758 273.456 350.298 274.705 351.932C276.577 354.382 276.079 354.888 277.7 356.627C278.902 357.918 279.808 358.317 279.673 358.925C279.482 359.785 277.545 359.54 277.145 360.537C276.737 361.555 278.206 363.178 279.449 364.149C281.782 365.971 283.998 366.023 286.056 366.54C288.292 367.102 291.388 368.475 294.735 372.182L323.254 406.159C317.519 398.988 302.055 378.894 296.541 371.03C294.95 368.76 293.388 366.368 293.839 363.608C294.274 360.95 296.522 358.271 297.837 353.944C297.991 353.439 298.4 352.026 297.769 351.447C297.246 350.968 296.488 351.495 295.994 351.055C295.331 350.465 296.157 349.038 296.318 346.783C296.431 345.193 296.156 343.999 295.92 342.972C295.848 342.663 294.753 338.041 293.286 338.047Z" fill="#F2F2F2"/>
+                        <path id="Vector_3" d="M315.278 342.984L314.614 337.055L314.918 336.605C316.322 334.527 317.038 332.497 317.046 330.57C317.048 330.264 317.033 329.958 317.019 329.646C316.962 328.409 316.89 326.872 317.692 325.08C318.141 324.08 319.404 321.767 321.302 322.054C321.813 322.125 322.199 322.36 322.493 322.635C322.536 322.566 322.58 322.497 322.627 322.423C323.218 321.521 323.686 321.135 324.137 320.762C324.484 320.476 324.842 320.181 325.403 319.483C325.649 319.176 325.841 318.907 326.003 318.681C326.493 317.997 327.135 317.181 328.266 317.195C329.474 317.253 330.106 318.252 330.526 318.913C331.274 320.092 331.614 320.943 331.838 321.507C331.92 321.713 332.013 321.945 332.06 322.016C332.45 322.589 335.615 322.054 336.807 321.859C339.485 321.412 341.803 321.026 342.757 322.715C343.442 323.923 342.933 325.52 341.201 327.59C340.662 328.234 340.088 328.724 339.578 329.108C340 329.359 340.378 329.746 340.531 330.353C340.892 331.79 339.657 333.23 336.861 334.639C336.167 334.991 335.232 335.46 333.923 335.686C333.306 335.792 332.75 335.818 332.275 335.832C332.265 336.107 332.201 336.405 332.033 336.711C331.542 337.613 330.52 338.042 328.98 337.939C327.285 337.851 325.889 337.527 324.658 337.244C323.583 336.998 322.657 336.789 321.93 336.837C320.582 336.946 319.543 338.025 318.323 339.425L315.278 342.984Z" fill="#F2F2F2"/>
+                        <path id="Vector_4" d="M318.359 307.683L312.793 309.829L312.281 309.65C309.914 308.818 307.769 308.641 305.904 309.121C305.607 309.198 305.314 309.289 305.016 309.382C303.834 309.751 302.365 310.21 300.428 309.89C299.348 309.708 296.79 309.074 296.586 307.165C296.525 306.653 296.654 306.219 296.846 305.866C296.768 305.842 296.691 305.816 296.607 305.789C295.585 305.446 295.092 305.092 294.618 304.75C294.253 304.487 293.877 304.216 293.059 303.85C292.7 303.69 292.391 303.573 292.131 303.474C291.345 303.172 290.393 302.759 290.12 301.661C289.869 300.478 290.675 299.613 291.208 299.039C292.159 298.016 292.896 297.472 293.384 297.112C293.563 296.981 293.764 296.832 293.821 296.768C294.276 296.246 292.955 293.321 292.465 292.217C291.353 289.739 290.392 287.596 291.783 286.244C292.778 285.275 294.452 285.362 296.894 286.512C297.654 286.871 298.273 287.302 298.773 287.697C298.91 287.225 299.188 286.761 299.736 286.459C301.035 285.746 302.741 286.575 304.813 288.922C305.329 289.505 306.02 290.29 306.571 291.499C306.83 292.069 306.996 292.6 307.131 293.056C307.399 292.996 307.703 292.983 308.042 293.067C309.039 293.313 309.714 294.193 310.005 295.709C310.349 297.371 310.39 298.803 310.428 300.065C310.462 301.168 310.495 302.116 310.727 302.808C311.174 304.084 312.481 304.816 314.145 305.64L318.359 307.683Z" fill="#F2F2F2"/>
+                        <path id="Vector_5" d="M315.278 290.216L314.614 284.287L314.918 283.837C316.322 281.759 317.038 279.729 317.046 277.803C317.048 277.496 317.033 277.19 317.019 276.878C316.962 275.641 316.89 274.104 317.692 272.312C318.141 271.312 319.404 268.999 321.302 269.286C321.813 269.357 322.199 269.592 322.493 269.867C322.536 269.798 322.58 269.729 322.627 269.655C323.218 268.753 323.686 268.367 324.137 267.994C324.484 267.708 324.842 267.413 325.403 266.715C325.649 266.408 325.841 266.139 326.003 265.913C326.493 265.229 327.135 264.413 328.266 264.427C329.474 264.485 330.106 265.484 330.526 266.145C331.274 267.325 331.614 268.175 331.838 268.739C331.92 268.945 332.013 269.177 332.06 269.248C332.45 269.821 335.615 269.286 336.807 269.091C339.485 268.644 341.803 268.258 342.757 269.947C343.442 271.155 342.933 272.752 341.201 274.822C340.662 275.466 340.088 275.956 339.578 276.34C340 276.592 340.378 276.978 340.531 277.585C340.892 279.022 339.657 280.462 336.861 281.871C336.167 282.223 335.232 282.692 333.923 282.918C333.306 283.024 332.75 283.05 332.275 283.064C332.265 283.339 332.201 283.637 332.033 283.943C331.542 284.845 330.52 285.275 328.98 285.172C327.285 285.083 325.889 284.759 324.658 284.476C323.583 284.23 322.657 284.021 321.93 284.069C320.582 284.178 319.543 285.257 318.323 286.657L315.278 290.216Z" fill="#F2F2F2"/>
+                        <path id="Vector_6" d="M321.345 405.302L320.102 404.523L318.654 404.689C318.631 404.555 318.552 404.246 318.433 403.762C317.785 401.111 315.808 393.043 314.159 380.338C313.008 371.469 312.357 362.351 312.222 353.233C312.088 344.1 312.52 337.186 312.866 331.63C313.128 327.438 313.446 323.448 313.758 319.56C314.588 309.174 315.371 299.363 314.789 288.501C314.66 286.076 314.389 281.029 311.441 275.658C309.73 272.544 307.374 269.778 304.437 267.442L306.263 265.146C309.505 267.728 312.112 270.791 314.012 274.25C317.281 280.204 317.576 285.704 317.717 288.346C318.31 299.4 317.518 309.305 316.68 319.792C316.37 323.665 316.053 327.639 315.792 331.813C315.449 337.318 315.021 344.172 315.154 353.187C315.285 362.196 315.93 371.203 317.065 379.96C318.694 392.505 320.642 400.452 321.282 403.063C321.622 404.458 321.694 404.75 321.345 405.302Z" fill="#F2F2F2"/>
+                        <path id="Vector_7" d="M299.06 272.1C298.94 272.1 298.818 272.097 298.695 272.088C296.199 271.954 293.887 270.459 291.823 267.648C290.855 266.325 290.36 264.817 289.372 261.808C289.219 261.344 288.475 258.991 288.023 255.753C287.726 253.637 287.764 252.753 288.183 251.971C288.648 251.101 289.401 250.494 290.249 250.085C290.211 249.804 290.241 249.515 290.363 249.22C290.863 247.998 292.191 248.158 292.91 248.235C293.273 248.281 293.727 248.341 294.216 248.315C294.987 248.278 295.4 248.049 296.027 247.706C296.627 247.376 297.373 246.967 298.479 246.741C300.661 246.286 302.489 246.904 303.091 247.107C306.262 248.164 307.825 250.628 309.634 253.483C309.995 254.055 311.233 256.139 312.05 258.997C312.64 261.058 312.557 261.974 312.38 262.655C312.019 264.055 311.167 264.857 309.004 266.626C306.746 268.478 305.612 269.406 304.639 269.97C302.373 271.278 300.95 272.1 299.06 272.1Z" fill="#F2F2F2"/>
+                        </g>
+                        <path id="Vector_8" d="M290.691 21.1674L249.612 32.3261L255.589 58.9811C253.656 57.6842 251.332 56.9262 248.829 56.9262C242.12 56.9262 236.681 62.3652 236.681 69.0746C236.681 75.7839 242.12 81.2229 248.829 81.2229C255.539 81.2229 260.978 75.7839 260.978 69.0746C260.978 66.7426 260.309 64.5718 259.17 62.7218L254.431 41.5888L289.869 30.4472L293.11 46.1892C291.165 44.8659 288.817 44.091 286.287 44.091C279.577 44.091 274.138 49.53 274.138 56.2394C274.138 62.9487 279.578 68.3877 286.287 68.3877C292.996 68.3877 298.435 62.9487 298.435 56.2394C298.435 53.8825 297.753 51.6899 296.591 49.8273L290.691 21.1674Z" fill="#6C63FF"/>
+                        <path id="Vector_9" d="M330.978 46.0842C324.338 46.0842 318.956 51.4667 318.956 58.1064C318.956 59.9834 319.398 61.7527 320.165 63.3356L327.027 91.6395L330.922 90.6954L325.628 68.8611C327.241 69.665 329.053 70.1286 330.978 70.1286C337.618 70.1286 343 64.7461 343 58.1064C343 51.4668 337.618 46.0842 330.978 46.0842Z" fill="#6C63FF"/>
+                        <path id="Vector_10" d="M379.903 108.466L373.091 81.2229L368.956 82.1948L374.284 103.504C372.645 102.762 370.824 102.336 368.896 102.336C361.846 102.336 356.131 107.877 356.131 114.712C356.131 121.547 361.846 127.088 368.896 127.088C375.946 127.088 381.66 121.547 381.66 114.712C381.66 112.431 381.013 110.301 379.903 108.466Z" fill="#6C63FF"/>
+                        </g>
+                        </g>
+                        </g>
+                        </g>
+                        <g id="Man">
+                        <g id="Man_2">
+                        <g id="Group_2">
+                        <path id="Vector_11" d="M211.898 400.518L202.554 400.517L198.108 364.473L211.9 364.474L211.898 400.518Z" fill="#A0616A"/>
+                        <path id="Vector_12" d="M179.883 400.306C179.592 400.796 179.438 402.377 179.438 402.947C179.438 404.699 180.858 406.119 182.61 406.119H211.549C212.744 406.119 213.712 405.15 213.712 403.955V402.75C213.712 402.75 215.144 399.129 212.196 394.666C212.196 394.666 208.533 398.161 203.06 392.687L201.445 389.763L189.761 398.308L183.285 399.105C181.868 399.28 180.611 399.078 179.883 400.306Z" fill="#2F2E41"/>
+                        </g>
+                        <g id="Group_3">
+                        <path id="Vector_13" d="M170.03 400.518L160.685 400.517L156.24 364.473L170.032 364.474L170.03 400.518Z" fill="#A0616A"/>
+                        <path id="Vector_14" d="M138.014 400.306C137.723 400.796 137.57 402.377 137.57 402.947C137.57 404.699 138.99 406.119 140.741 406.119H169.68C170.875 406.119 171.844 405.15 171.844 403.955V402.75C171.844 402.75 173.276 399.129 170.328 394.666C170.328 394.666 166.665 398.161 161.191 392.687L159.577 389.763L147.893 398.308L141.416 399.105C139.999 399.28 138.743 399.078 138.014 400.306Z" fill="#2F2E41"/>
+                        </g>
+                        <path id="Vector_15" d="M212.7 174.391L221.4 196.685L214.604 374.761H195.573L178.445 214.085L174.367 375.305L155.879 374.761L135.761 195.869L149.082 179.829L212.7 174.391Z" fill="#2F2E41"/>
+                        <path id="Vector_16" d="M171.648 47.9707L194.485 46.3395L201.554 57.7581L222.76 63.7393L214.875 118.929L223.303 201.307C223.303 201.307 192.854 196.957 190.679 205.657C188.504 214.356 135.217 196.957 135.217 196.957L153.432 140.679L151.801 96.6358L146.907 71.0798L169.201 60.7487L171.648 47.9707Z" fill="#E6E6E6"/>
+                        <path id="Vector_17" d="M161.317 64.283C161.317 64.283 143.118 64.0112 140.663 71.6236C138.208 79.236 130.051 131.979 130.051 131.979L123.798 155.088L151.801 141.223L145.82 131.994L165.395 94.4608L161.317 64.283Z" fill="#E6E6E6"/>
+                        <path id="Vector_18" d="M172.45 148.835C175.459 148.838 178.256 147.104 179.426 144.332C180.311 142.235 180.227 140.224 179.565 138.499C179.778 138.411 179.99 138.319 180.208 138.241C179.887 138.111 179.576 137.964 179.265 137.818C178.181 135.657 176.103 134.089 173.627 133.709C170.562 130.424 168.677 126.024 168.657 121.181C168.617 111.199 176.714 102.862 186.692 102.622C186.771 102.621 186.85 102.619 186.928 102.618C191.396 102.567 195.45 105.066 197.714 108.919C199.035 111.167 201.476 112.676 204.272 112.676C206.414 112.676 208.345 111.791 209.726 110.367C212.734 107.265 216.501 104.957 220.764 104.248C223.563 103.783 226.46 103.608 229.425 103.755C249.717 104.764 267.176 122.749 267.609 143.062C268.092 165.687 249.896 184.179 227.382 184.179C215.666 184.179 205.126 179.169 197.775 171.177C194.511 167.629 189.937 165.641 185.117 165.691C185.068 165.691 185.019 165.691 184.97 165.691C177.162 165.691 170.832 159.362 170.832 151.554C170.832 151.121 170.854 150.693 170.894 150.271C170.97 149.481 171.657 148.834 172.45 148.835Z" fill="#6C63FF"/>
+                        <path id="Vector_19" d="M239.344 136.873L103.952 111.317L103.408 121.104L237.713 153.185L239.344 136.873Z" fill="#6C63FF"/>
+                        <path id="Vector_20" d="M105.583 112.948L103.952 111.317C103.952 111.317 96.883 108.054 96.883 107.511C96.883 107.17 86.445 103.635 78.6355 101.037C74.2741 99.5863 69.6681 102.457 69.0471 107.011L68.0685 114.188C67.4833 118.479 70.7211 122.342 75.0485 122.515L94.1642 123.279L103.408 121.104L105.583 112.948Z" fill="#6C63FF"/>
+                        <path id="Vector_21" d="M239.072 139.863L239.395 138.509L103.916 112.608L103.68 114.307L239.072 139.863Z" fill="#3F3D56"/>
+                        <path id="Vector_22" d="M238.762 142.436L239.072 140.951L103.769 115.289L103.68 117.026L238.762 142.436Z" fill="#3F3D56"/>
+                        <path id="Vector_23" d="M238.451 145.518L238.528 143.126L103.663 117.241L103.68 118.657L238.451 145.518Z" fill="#3F3D56"/>
+                        <path id="Vector_24" d="M238.09 149.098L237.985 146.932L103.466 119.193L103.35 119.724L238.09 149.098Z" fill="#3F3D56"/>
+                        <path id="Vector_25" d="M238.088 151.269L237.985 149.651L103.668 120.09L103.548 120.62L238.088 151.269Z" fill="#3F3D56"/>
+                        <path id="Vector_26" d="M160.289 60.8162L167.026 57.0859L169.948 116.754L168.929 124.095C168.929 124.095 151.921 77.1961 160.289 60.8162Z" fill="#3F3D56"/>
+                        <path id="Vector_27" d="M183.338 42.2614C192.648 42.2614 200.194 34.7146 200.194 25.4053C200.194 16.0959 192.648 8.54922 183.338 8.54922C174.029 8.54922 166.482 16.0959 166.482 25.4053C166.482 34.7146 174.029 42.2614 183.338 42.2614Z" fill="#A0616A"/>
+                        <path id="Vector_28" d="M168.929 35.4646L172.959 38.6815L168.385 21.3272C168.385 21.3272 181.163 21.0553 182.251 13.9867C182.251 13.9867 192.31 13.7148 195.029 13.7148C197.748 13.7148 198.974 31.7042 198.974 31.7042C198.974 31.7042 204.272 16.9773 198.835 9.36485C193.398 1.75243 195.301 6.37426 194.213 3.65554C193.126 0.936816 181.979 -1.56355 174.91 1.20869C167.842 3.98093 167.57 7.93271 165.395 7.9691C163.22 8.00549 155.607 18.8804 162.676 27.5803C169.745 36.2802 168.929 35.4646 168.929 35.4646Z" fill="#2F2E41"/>
+                        <path id="Vector_29" d="M220.425 146.078C222.423 144.484 223.896 142.57 224.725 140.679L244.717 126.695L237.785 117.377L218.251 132.566C216.223 132.955 214.031 133.965 212.033 135.56C207.469 139.201 205.647 144.508 207.965 147.413C210.282 150.317 215.861 149.72 220.425 146.078Z" fill="#A0616A"/>
+                        <path id="Vector_30" d="M143.833 124.806C142.35 126.888 141.461 129.133 141.183 131.179L125.808 150.122L135.036 157.175L149.639 137.2C151.482 136.268 153.312 134.693 154.794 132.611C158.181 127.854 158.472 122.251 155.446 120.096C152.419 117.941 147.219 120.05 143.833 124.806Z" fill="#A0616A"/>
+                        <path id="Vector_31" d="M214.06 67.2736C214.06 67.2736 218.954 59.1175 223.847 64.0111C227.72 67.8835 248.956 92.5245 257.651 102.641C260.049 105.431 261.366 108.985 261.366 112.664C261.366 118.354 258.224 123.58 253.198 126.248L226.022 140.679L218.41 129.26L241.791 112.404L205.904 92.8296L214.06 67.2736Z" fill="#E6E6E6"/>
+                        <path id="Vector_32" d="M214.06 67.2736C214.06 67.2736 218.954 59.1175 223.847 64.0111C227.72 67.8835 248.956 92.5245 257.651 102.641C260.049 105.431 261.366 108.985 261.366 112.664C261.366 118.354 258.224 123.58 253.198 126.248L226.022 140.679L218.41 129.26L241.791 112.404L205.904 92.8296L214.06 67.2736Z" fill="#E6E6E6"/>
+                        <path id="Vector_33" d="M128.127 142.436L123.798 155.088L136.304 161.613L145.82 155.088L151.801 141.223L134.129 136.057" fill="#E6E6E6"/>
+                        </g>
+                        </g>
+                        </g>
+                        <defs>
+                        <linearGradient id="paint0_linear_1_2" x1="201" y1="0" x2="201" y2="390" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BCCBFF"/>
+                        <stop offset="1" stop-color="#001767"/>
+                        </linearGradient>
+                        <clipPath id="clip0_1_2">
+                        <rect width="397.725" height="407.127" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>                       
+                </div>
+            </div>
+        </section>
+        <!-- Featured Playlists section -->
+        <section id="playlist">
+            <div class="section-header">
+                <h2>Featured Playlists</h2>
+                <p class="subtitle">Discover the most popular playlists curated just for you</p>
+            </div>
+            <div class="playlist-cards">
+                <!-- Playlist Card 1 -->
+                <div class="playlist-card">
+                    <div class="card-image">
+                        <img src="https://i1.sndcdn.com/artworks-cCIFzCliiKelihfy-txtCLw-t500x500.jpg" alt="Playlist 1">
+                        <div class="song-count">20 Songs</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chill Vibes</h3>
+                        <p>Relax and unwind with these smooth tunes.</p>
+                        <input type="checkbox" id="follow1" class="follow-toggle">
+                        <label for="follow1" class="follow-button">Follow</label>
+                    </div>
+                </div>
+                <!-- Playlist Card 2 -->
+                <div class="playlist-card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGJipXM41x77wKO8KgSEXEz3hLRpMhsKW8OA&s" alt="Playlist 2">
+                        <div class="song-count">25 Songs</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Top Hits</h3>
+                        <p>Stay updated with the latest chart-toppers.</p>
+                        <input type="checkbox" id="follow2" class="follow-toggle">
+                        <label for="follow2" class="follow-button">Follow</label>
+                    </div>
+                </div>
+                <!-- Playlist Card 3 -->
+                <div class="playlist-card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShX3GKs1JLdMjWwHB7ZN6vK59ED21TAw6UKA&s" alt="Playlist 3">
+                        <div class="song-count">15 Songs</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Workout Mix</h3>
+                        <p>Get pumped with these high-energy tracks.</p>
+                        <input type="checkbox" id="follow3" class="follow-toggle">
+                        <label for="follow3" class="follow-button">Follow</label>
+                    </div>
+                </div>
+                <!-- Playlist Card 4 -->
+                <div class="playlist-card">
+                    <div class="card-image">
+                        <img src="https://previews.123rf.com/images/patterndesign/patterndesign1706/patterndesign170600060/79572912-classical-music-background-pattern-with-the-notes.jpg" alt="Playlist 4">
+                        <div class="song-count">18 Songs</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Classical Essentials</h3>
+                        <p>Experience the timeless classics and get back in time.</p>
+                        <input type="checkbox" id="follow4" class="follow-toggle">
+                        <label for="follow4" class="follow-button">Follow</label>
+                    </div>
+                </div>
+                <!-- Add more playlist cards as needed -->
+            </div>
+        </section>
+        <!-- Recommended Albums section -->
+        <section id="album">
+            <div class="section-header">
+                <h2>Recommended Albums</h2>
+                <p class="subtitle">Search and explore albums tailored to your taste</p>
+                <!-- Search bar -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search albums...">
+                    <span class="search-icon">&#128269;</span>
+                </div>
+            </div>
+            <!-- Album cards -->
+            <div class="album-cards">
+                <!-- Album Card 1 -->
+                <div class="album-card">
+                    <div class="card-image">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273459c4f1a89716e40ed5ff12b" alt="Album 1">
+                    </div>
+                    <div class="card-content">
+                        <h3>Best of Arijit Singh</h3>
+                        <p>Arijit Singh</p>
+                        <p>"Melodies of the Heart: The Best of Arijit Singh"</p>
+                        <!-- Know More button -->
+                        <label for="modal-toggle-1" class="know-more-button">Know More</label>
+                    </div>
+                </div>
+
+                <!-- Hidden checkbox input for modal toggle -->
+                <input type="checkbox" id="modal-toggle-1" class="modal-toggle">
+                <!-- Modal content -->
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <label for="modal-toggle-1" class="close">&times;</label>
+                        </div>
+                        <div class="album-info">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273459c4f1a89716e40ed5ff12b" alt="Album Cover" class="album-cover">
+                            <div class="album-details">
+                                <h2 class="album-title">Best of Arijit Singh</h2>
+                                <p class="artist">Arijit Singh</p>
+                                <p class="description">"The Best of Arijit Singh" is a curated collection that celebrates the unparalleled voice and emotive power of one of India's most beloved playback singers. This album brings together his most iconic tracks, spanning soulful ballads, romantic anthems, and heart-wrenching melodies. Known for his versatility and deep emotional resonance, Arijit Singh's music has a timeless quality that connects with listeners of all ages. Featuring hits like "Tum Hi Ho," "Channa Mereya," and "Ae Dil Hai Mushkil," this compilation is a testament to Arijit's artistry and his ability to capture the essence of human emotions through song. Whether you're a longtime fan or new to his music, "The Best of Arijit Singh" is a must-listen journey through the heart and soul of contemporary Indian music.</p>
+                                <button class="listen-now-button">Listen Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Album Card 2 -->
+                <div class="album-card">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/0/08/Justin_Bieber_-_Justice.png" alt="Album 2">
+                    </div>
+                    <div class="card-content">
+                        <h3>Justice</h3>
+                        <p>Justin Bieber</p>
+                        <p>"Justice Served: Experience the Power and Passion of Every Track"</p>
+                        <!-- Know More button -->
+                        <label for="modal-toggle-2" class="know-more-button">Know More</label>
+                    </div>
+                </div>
+
+                <!-- Hidden checkbox input for modal toggle -->
+                <input type="checkbox" id="modal-toggle-2" class="modal-toggle">
+                <!-- Modal content -->
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <label for="modal-toggle-2" class="close">&times;</label>
+                        </div>
+                        <div class="album-info">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/0/08/Justin_Bieber_-_Justice.png" alt="Album Cover" class="album-cover">
+                            <div class="album-details">
+                                <h2 class="album-title">Justice</h2>
+                                <p class="artist">Justin Bieber</p>
+                                <p class="description">"Justice" is the sixth studio album by Canadian singer Justin Bieber, released on March 19, 2021. This album marks a pivotal point in Bieber's career, blending his pop roots with elements of R&B, gospel, and synth-pop. With deeply personal lyrics and a focus on themes of love, redemption, and societal issues, "Justice" delivers a rich, emotive experience. The album features standout tracks like "Peaches," "Anyone," and "Hold On," showcasing Bieber's growth as an artist. Collaborations with artists such as Khalid, Chance the Rapper, and The Kid LAROI add further depth and diversity to the project, making it a compelling listen for both longtime fans and new listeners.</p>
+                                <button class="listen-now-button">Listen Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Album - 3 card-->
+                <div class="album-card">
+                    <div class="card-image">
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84714442219698e581a592fa2c" alt="Album 3">
+                    </div>
+                    <div class="card-content">
+                        <h3>Best of Ed Sheeran</h3>
+                        <p>Ed Sheeran</p>
+                        <p>"Journey Through a Musical Wonderland: The Best of Ed Sheeran's Timeless Hits"</p>
+                        <!-- Know More button -->
+                        <label for="modal-toggle-3" class="know-more-button">Know More</label>
+                    </div>
+                </div>
+
+                <!-- Hidden checkbox input for modal toggle -->
+                <input type="checkbox" id="modal-toggle-3" class="modal-toggle">
+                <!-- Modal content -->
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <label for="modal-toggle-3" class="close">&times;</label>
+                        </div>
+                        <div class="album-info">
+                            <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84714442219698e581a592fa2c" alt="Album Cover" class="album-cover">
+                            <div class="album-details">
+                                <h2 class="album-title">Best of Ed Sheeran</h2>
+                                <p class="artist">Ed Sheeran</p>
+                                <p class="description">"Journey Through a Musical Wonderland: The Best of Ed Sheeran's Timeless Hits" is a captivating compilation album that takes listeners on an immersive journey through the extraordinary career of one of modern music's most cherished artists, Ed Sheeran. This meticulously curated collection brings together his most iconic tracks, spanning a diverse range of genres from heartfelt ballads to infectious pop anthems. From chart-topping singles like "Shape of You" and "Thinking Out Loud" to intimate acoustic gems like "Photograph" and "Perfect," this album is a testament to Sheeran's unparalleled talent and enduring appeal. Whether you're a longtime fan or discovering his music for the first time, "Journey Through a Musical Wonderland" promises an unforgettable listening experience that celebrates the timeless artistry of Ed Sheeran.</p>
+                                <button class="listen-now-button">Listen Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Add more album cards as needed -->
+            </div>
+
+    </section>
+    <!-- User Reviews section -->
+    <section id="reviews">
+        <div class="section-header">
+            <h2>User Reviews</h2>
+            <p class="subtitle">Hear what our users have to say</p>
+        </div>
+        <div class="reviews-content">
+            <!-- User Reviews Cards -->
+            <div class="reviews-cards">
+                <div class="review-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaJrw84qoPShC6ZmhQmJIcUaruGtgunkq70LHRxT-D92_m4uTdEjI7e0WroovzumedGqM" alt="User 1">
+                    <h3>Mahesh</h3>
+                    <p>This music library has the best collection of playlists. Highly recommend!</p>
+                </div>
+                <div class="review-card">
+                    <img src="https://photosnow.org/wp-content/uploads/2024/04/6_sad-dp.jpg" alt="User 2">
+                    <h3>John</h3>
+                    <p>Amazing platform to discover new music. I love the user interface!</p>
+                </div>
+                <div class="review-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3pGIDzLdH4F2poV7sMa_yT_CPBApoWjKe1g&s" alt="User 3">
+                    <h3>Rohit</h3>
+                    <p>Great selection of songs and albums. The featured playlists are my favorite.</p>
+                </div>
+            </div>
+            <!-- User Review Form -->
+            <div class="review-form">
+                <h3>Submit Your Review</h3>
+                <form>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="review" placeholder="Your Review" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+   <!-- Footer section -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>Music Library is your ultimate music discovery platform, offering a diverse collection of songs and playlists.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="https://www.example.com/terms" target="_blank">Terms and Conditions</a></li>
+                <li><a href="https://www.example.com/privacy" target="_blank">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Music Library. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <div class="content"></div>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+</body>
+</html>
+
